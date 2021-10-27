@@ -28,5 +28,5 @@ window.addEventListener("optimizedScroll", function () {
   tl.style.transform = "rotate(" + window.pageYOffset + "deg)";
   tr.style.transform = "rotate(" + window.pageYOffset + "deg)";
   bl.style.transform = "rotate(" + window.pageYOffset + "deg)";
-  br.style.transform = "rotate(-" + window.pageYOffset + "deg)";
+  br.style.transform = "rotate(" + window.pageYOffset + "deg)";
 });
