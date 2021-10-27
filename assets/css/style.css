@@ -29,25 +29,25 @@ body {
   filter: invert(1);
 }
 
-.tl {
+#tl {
   position: fixed;
   top: -100;
   left: -100;
 }
 
-.tr {
+#tr {
   position: fixed;
   top: -100;
   right: -100;
 }
 
-.bl {
+#bl {
   position: fixed;
   left: -100;
   bottom: -100;
 }
 
-.br {
+#br {
   position: fixed;
   bottom: -100;
   right: -100;
