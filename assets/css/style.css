@@ -1,4 +1,4 @@
-.hero {
+.sec-1 {
   background-color: #000000;
   height: 100vh;
 }
@@ -28,30 +28,66 @@
 
 #tl {
   position: fixed;
-  top: -150;
-  left: -150;
+  top: -150px;
+  left: -150px;
 }
 
 #tr {
   position: fixed;
-  top: -150;
-  right: -150;
+  top: -150px;
+  right: -150px;
 }
 
 #bl {
   position: fixed;
-  left: -150;
-  bottom: -150;
+  left: -150px;
+  bottom: -150px;
 }
 
 #br {
   position: fixed;
-  bottom: -150;
-  right: -150;
+  bottom: -150px;
+  right: -150px;
 }
 
 .sec-2 {
-  background-color: #000000;
+  background-color: #ff0000;
   width: 100%;
+  height: 100vh;
+}
+
+nav {
+  position: fixed;
+  top: 30%;
+  bottom: 30%;
+  right: 2%;
+  width: 60px;
+  padding: 30px 0;
+}
+
+nav ul {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #f4f4e4;
+}
+
+.active {
+  box-shadow: 0 0 0 3px #ffffff, 0 0 0 6px #ffffff;
+}
+
+.sec-3 {
+  background-color: #000000;
   height: 100vh;
 }
