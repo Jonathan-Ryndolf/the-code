@@ -25,10 +25,10 @@ var tl = document.getElementById("tl"),
 // to use the script *without* anti-jank, set the event to "scroll" and remove the anonymous function.
 
 window.addEventListener("optimizedScroll", function () {
-  tl.style.transform = "rotate(" + window.pageYOffset + "deg)";
-  tr.style.transform = "rotate(" + window.pageYOffset + "deg)";
-  bl.style.transform = "rotate(" + window.pageYOffset + "deg)";
-  br.style.transform = "rotate(" + window.pageYOffset + "deg)";
+  tl.style.transform = "rotate(-" + window.pageYOffset / 10 + "deg)";
+  tr.style.transform = "rotate(" + window.pageYOffset / 10 + "deg)";
+  bl.style.transform = "rotate(" + window.pageYOffset / 10 + "deg)";
+  br.style.transform = "rotate(-" + window.pageYOffset / 10 + "deg)";
 });
 
 $(document).ready(function () {
