@@ -21,15 +21,16 @@
 }
 
 .corners img {
-  width: 300px;
+  width: 500px;
   height: auto;
   filter: invert(1);
 }
 
 #tl {
   position: fixed;
-  top: -150px;
-  left: -150px;
+  top: 100px;
+  right: -250px;
+  opacity: 0.2;
 }
 
 #tr {
