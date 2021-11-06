@@ -104,20 +104,20 @@ ul {
 }
 
 .half {
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
 }
 
 .flip-panel img {
-  width: 500px;
+  width: 400px;
   height: auto;
 }
 
 .flip-panel {
   display: block;
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   margin: 0px 0px;
   perspective: 1200px;
 }
@@ -166,13 +166,12 @@ ul {
   backface-visibility: hidden;
 }
 
-.panel .front:hover {
+/* .panel .front:hover {
   -moz-transform: rotateY(-25deg);
   -moz-transform-origin: left;
   transform: rotateY(-25deg);
   transform-origin: left;
-  /* box-shadow: 4px 4px 12px rgb(100, 100, 100); */
-}
+} */
 
 .panel.open {
   z-index: 1;
@@ -192,4 +191,54 @@ ul {
   -moz-transform-origin: right;
   transform: rotateY(0deg);
   transform-origin: right;
+}
+
+.bookWrapper {
+  width: 800px;
+  height: 400px;
+}
+
+.bookWrapper img {
+  height: 400px;
+  width: auto;
+}
+
+.bookBg {
+  position: relative;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.pageBg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url("../media/butterfly-bg.jpg");
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+}
+
+.pageWrapper {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.pageFace {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
 }

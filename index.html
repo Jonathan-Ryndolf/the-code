@@ -5,6 +5,7 @@
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"
   ></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
   <head>
     <title>The Code</title>
     <link href="assets/css/style.css" rel="stylesheet" />
@@ -47,8 +48,8 @@
         <div class="center-div">
           <div class="half">
             <img
-              style="width: 500px; height: 500px"
-              src="assets/media//butterfly-left.jpg"
+              style="width: 400px; height: 400px"
+              src="assets/media/butterfly-left.jpg"
             />
           </div>
           <div class="flip-panel">
@@ -60,13 +61,15 @@
               </div>
 
               <div class="back">
-                <div class="content">[ back panel content 1 ]</div>
+                <div class="content">
+                  <img src="assets/media/1.jpg" />
+                </div>
               </div>
             </div>
 
             <div class="panel">
               <div class="front">
-                <div class="content">[ front panel content 2 ]</div>
+                <div class="content"><img src="assets/media/2.jpg" /></div>
               </div>
 
               <div class="back">
@@ -81,25 +84,60 @@
 
               <div class="back">
                 <div class="content">
-                  <img
-                    style="width: 500px; height: 500px"
-                    src="assets/media//butterfly-left.jpg"
-                  />
+                  <img src="assets/media/butterfly-left.jpg" />
                 </div>
               </div>
             </div>
             <div class="front half">
               <div class="content">
-                <img
-                  style="width: 500px; height: 500px"
-                  src="assets/media//butterfly-right.jpg"
-                />
+                <img src="assets/media/butterfly-right.jpg" />
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="main-sec sec-3"></section>
+      <section class="main-sec sec-3">
+        <div class="center-div">
+          <div class="bookWrapper">
+            <div class="bookBg">
+              <div class="pageBg">
+                <div class="pageWrapper">
+                  <div id="page3" class="page">
+                    <div class="pageFace front">
+                      <img src="assets/media/1.jpg" />
+                      <div class="pageFoldRight"></div>
+                    </div>
+                    <div class="pageFace back">
+                      <img src="assets/media/butterfly-left.jpg" />
+                      <div class="pageFoldLeft"></div>
+                    </div>
+                  </div>
+                  <div id="page2" class="page">
+                    <div class="pageFace front">
+                      <img src="assets/media/2.jpg" />
+                      <div class="pageFoldRight"></div>
+                    </div>
+                    <div class="pageFace back">
+                      <img src="assets/media/1.jpg" />
+                      <div class="pageFoldLeft"></div>
+                    </div>
+                  </div>
+                  <div id="page1" class="page">
+                    <div class="pageFace front">
+                      <img src="assets/media/butterfly-right.jpg" />
+                      <div class="pageFoldRight"></div>
+                    </div>
+                    <div class="pageFace back">
+                      <img src="assets/media/1.jpg" />
+                      <div class="pageFoldLeft"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <nav>
       <ul>
