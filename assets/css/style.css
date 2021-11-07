@@ -170,13 +170,37 @@ ul {
 }
 
 .four {
-  width: 94px;
-  height: 94px;
+  width: 94.5px;
+  height: 94.5px;
   background-color: rgb(0, 255, 76);
 }
 
 .five {
-  width: 58px;
-  height: 58px;
+  width: 58.5px;
+  height: 58.5px;
   background-color: rgb(255, 0, 149);
+}
+
+.six {
+  width: 36px;
+  height: 36px;
+  background-color: rgb(0, 60, 255);
+}
+
+.seven {
+  width: 22.3px;
+  height: 22.3px;
+  background-color: rgb(255, 145, 0);
+}
+
+.eight {
+  width: 14px;
+  height: 14px;
+  background-color: rgb(204, 0, 255);
+}
+
+.nine {
+  width: 14px;
+  height: 8.3px;
+  background-color: rgb(0, 195, 255);
 }
