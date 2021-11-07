@@ -150,3 +150,9 @@ ul {
   overflow: hidden;
   text-align: center;
 }
+
+.half {
+  width: 400px;
+  height: 400px;
+  background-color: aqua;
+}
