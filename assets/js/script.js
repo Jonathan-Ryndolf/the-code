@@ -58,7 +58,7 @@ $(document).ready(function () {
 });
 
 TweenLite.set(".pageBg", { xPercent: -50, yPercent: -50 });
-TweenLite.set(".pageWrapper", { left: "50%", perspective: 1000 });
+TweenLite.set(".pageWrapper", { left: "50%", perspective: 1500 });
 TweenLite.set(".page", { transformStyle: "preserve-3d" });
 TweenLite.set(".back", { rotationY: -180 });
 TweenLite.set([".back", ".front"], { backfaceVisibility: "hidden" });
@@ -69,7 +69,7 @@ $(".page").click(function () {
     TweenMax.to($(this), 1, {
       force3D: true,
       rotationY: -180,
-      transformOrigin: "0px top",
+      transformOrigin: "0 top",
       className: "+=left",
       z: zi,
       zIndex: zi,
