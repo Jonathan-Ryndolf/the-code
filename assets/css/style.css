@@ -109,8 +109,8 @@ ul {
 }
 
 .bookWrapper img {
-  height: 400px;
-  width: auto;
+  height: 100%;
+  width: 100%;
 }
 
 .bookBg {
@@ -125,6 +125,7 @@ ul {
   left: 50%;
   top: 50%;
   background-image: url("../media/butterfly-bg.jpg");
+  background-size: 800px 400px;
   width: 100%;
   height: 100%;
 }
