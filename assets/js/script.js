@@ -69,7 +69,7 @@ $(".page").click(function () {
     TweenMax.to($(this), 1, {
       force3D: true,
       rotationY: -180,
-      transformOrigin: "-1px top",
+      transformOrigin: "0px top",
       className: "+=left",
       z: zi,
       zIndex: zi,
