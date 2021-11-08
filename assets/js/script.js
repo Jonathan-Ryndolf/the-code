@@ -1,3 +1,5 @@
+// Corners
+
 (function () {
   var throttle = function (type, name, obj) {
     var obj = obj || window;
@@ -30,6 +32,8 @@ window.addEventListener("optimizedScroll", function () {
   bl.style.transform = "rotate(" + window.pageYOffset / 10 + "deg)";
   br.style.transform = "rotate(-" + window.pageYOffset / 10 + "deg)";
 });
+
+// Flipbook
 
 TweenLite.set(".pageBg", { xPercent: -50, yPercent: -50 });
 TweenLite.set(".pageWrapper", { left: "50%", perspective: 1500 });
@@ -68,3 +72,29 @@ $(".page").click(function () {
 var pageLocation = [],
   lastPage = null;
 zi = 0;
+
+// Navigation active state on scroll
+var nav_sections = $("section");
+var main_nav = $(".nav-menu");
+
+$(window).on("scroll", function () {
+  var cur_pos = $(this).scrollTop() + 200;
+
+  nav_sections.each(function () {
+    var top = $(this).offset().top,
+      bottom = top + $(this).outerHeight();
+
+    if (cur_pos >= top && cur_pos <= bottom) {
+      if (cur_pos <= bottom) {
+        main_nav.find("li").removeClass("active");
+      }
+      main_nav
+        .find('a[href="#' + $(this).attr("id") + '"]')
+        .parent("li")
+        .addClass("active");
+    }
+    if (cur_pos < 300) {
+      $(".nav-menu ul:first li:first").addClass("active");
+    }
+  });
+});
