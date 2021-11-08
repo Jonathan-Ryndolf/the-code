@@ -73,7 +73,8 @@ var pageLocation = [],
   lastPage = null;
 zi = 0;
 
-// Navigation active state on scroll
+// Scroll
+
 var nav_sections = $("section");
 var main_nav = $(".nav-menu");
 
