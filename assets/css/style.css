@@ -151,56 +151,75 @@ ul {
   text-align: center;
 }
 
-.one {
+.one,
+.one img {
   width: 400px;
   height: 400px;
-  background-color: aqua;
 }
 
-.two {
+.two,
+.two img {
   width: 247px;
   height: 247px;
-  background-color: rgb(255, 0, 0);
 }
 
-.three {
+.three,
+.three img {
   width: 153px;
   height: 153px;
-  background-color: rgb(255, 251, 0);
 }
 
-.four {
+.four,
+.four img {
   width: 94.5px;
   height: 94.5px;
-  background-color: rgb(0, 255, 76);
 }
 
-.five {
+.five,
+.five img {
   width: 58.5px;
   height: 58.5px;
-  background-color: rgb(255, 0, 149);
 }
 
-.six {
+.six,
+.six img {
   width: 36px;
   height: 36px;
-  background-color: rgb(0, 60, 255);
 }
 
-.seven {
+.seven,
+.seven img {
   width: 22.3px;
   height: 22.3px;
-  background-color: rgb(255, 145, 0);
 }
 
-.eight {
+.eight,
+.eight img {
   width: 14px;
   height: 14px;
-  background-color: rgb(204, 0, 255);
 }
 
 .nine {
   width: 14px;
   height: 8.3px;
-  background-color: rgb(0, 195, 255);
+  background-color: #000000;
+}
+
+.two,
+.six {
+  transform: rotate(90deg);
+}
+
+.three,
+.seven {
+  transform: rotate(180deg);
+}
+
+.four,
+.eight {
+  transform: rotate(270deg);
+}
+
+* {
+  line-height: 0px;
 }
