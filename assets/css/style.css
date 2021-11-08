@@ -151,49 +151,41 @@ ul {
   text-align: center;
 }
 
-.one,
 .one img {
   width: 400px;
   height: 400px;
 }
 
-.two,
 .two img {
   width: 247px;
   height: 247px;
 }
 
-.three,
 .three img {
   width: 153px;
   height: 153px;
 }
 
-.four,
 .four img {
   width: 94.5px;
   height: 94.5px;
 }
 
-.five,
 .five img {
   width: 58.5px;
   height: 58.5px;
 }
 
-.six,
 .six img {
   width: 36px;
   height: 36px;
 }
 
-.seven,
 .seven img {
   width: 22.3px;
   height: 22.3px;
 }
 
-.eight,
 .eight img {
   width: 14px;
   height: 14px;
@@ -223,3 +215,7 @@ ul {
 * {
   line-height: 0px;
 }
+
+/* .nav-menu > ul > li {
+  white-space: nowrap;
+} */
