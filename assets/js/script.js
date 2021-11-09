@@ -99,3 +99,42 @@ $(window).on("scroll", function () {
     }
   });
 });
+
+// Golden Ratio
+
+const imgNum = [0, 1, 2, 3, 4, 5, 6, 7];
+const imgName = [
+  "img_one",
+  "img_two",
+  "img_three",
+  "img_four",
+  "img_five",
+  "img_six",
+  "img_seven",
+  "img_eight",
+];
+
+imgName.map((data, index) => {
+  const value = document.getElementById(data);
+  value.setAttribute("src", `/assets/media/golden/${imgNum[index]}.jpg`);
+});
+
+// change total here
+
+total = 11;
+count = 1;
+
+function loopImages() {
+  const increase = imgNum.length + count;
+  if (increase < total) {
+    count = count + 1;
+  }
+
+  imgNum.splice(0, 1);
+  imgNum.push(increase);
+
+  imgName.map((data, index) => {
+    const value = document.getElementById(data);
+    value.setAttribute("src", `/assets/media/golden/${imgNum[index]}.jpg`);
+  });
+}
