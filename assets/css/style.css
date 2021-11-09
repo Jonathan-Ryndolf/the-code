@@ -5,6 +5,7 @@
 }
 
 html {
+  filter: saturate(0);
   scroll-behavior: smooth;
 }
 
@@ -218,7 +219,7 @@ nav .dot {
   background-color: #000000;
 }
 
-.two,
+/* .two,
 .six {
   transform: rotate(90deg);
 }
@@ -231,8 +232,10 @@ nav .dot {
 .four,
 .eight {
   transform: rotate(270deg);
-}
-
-/* .nav-menu > ul > li {
-  white-space: nowrap;
 } */
+
+.arrow {
+  color: #ffffff;
+  background-color: #00000000;
+  border: none;
+}
