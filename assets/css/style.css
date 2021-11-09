@@ -27,6 +27,12 @@ ul {
   height: 100vh;
 }
 
+::selection {
+  background: #ffffff;
+
+  color: #000000;
+}
+
 /* Dots */
 
 nav {
