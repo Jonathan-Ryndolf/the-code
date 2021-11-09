@@ -116,7 +116,7 @@ const imgName = [
 
 imgName.map((data, index) => {
   const value = document.getElementById(data);
-  value.setAttribute("src", `/assets/media/golden/${imgNum[index]}.jpg`);
+  value.setAttribute("src", `assets/media/golden/${imgNum[index]}.jpg`);
 });
 
 // change total here
