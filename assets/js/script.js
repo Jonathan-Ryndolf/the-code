@@ -152,3 +152,13 @@ function loopImagesback() {
     });
   }
 }
+
+// Tab Change Message
+
+document.addEventListener("visibilitychange", (event) => {
+  if (document.visibilityState === "visible") {
+    document.title = "Ryndolf's Portfolio";
+  } else {
+    document.title = "Wait! There's more";
+  }
+});
