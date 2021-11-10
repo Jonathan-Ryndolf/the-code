@@ -140,11 +140,15 @@ function loopImages() {
 }
 
 function loopImagesback() {
-  console.log("Hello");
-  const increase = imgNum.length + 1;
-  imgNum.unshift(increase);
-  imgName.map((data, index) => {
-    const value = document.getElementById(data);
-    value.setAttribute("src", `assets/media/golden/${imgNum[index]}.jpg`);
-  });
+  if (imgNum[0] !== 0) {
+    const appenValue = imgNum[0] - 1;
+
+    imgNum.splice(imgNum.length - 1, 1);
+    imgNum.unshift(appenValue);
+
+    imgName.map((data, index) => {
+      const value = document.getElementById(data);
+      value.setAttribute("src", `assets/media/golden/${imgNum[index]}.jpg`);
+    });
+  }
 }
