@@ -121,7 +121,7 @@ imgName.map((data, index) => {
 
 // change total here
 
-total = 11;
+total = 10;
 count = 1;
 
 function loopImages() {
